@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "", :tag => s.version }
 
   s.ios.deployment_target = '9.0'
-  s.source_files = 'J2OCCOmpoent/dist/*.{h,m}'
+  s.source_files = 'J2OCCOmpoent/ocdist/*.{h,m}'
   s.libraries = 'iconv'
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-ljre_emul' }
 end
