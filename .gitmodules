@@ -1,0 +1,3 @@
+[submodule "source/java"]
+	path = source/java
+	url = https://github.com/Tdreamy/j2ObjCJavaCode.git

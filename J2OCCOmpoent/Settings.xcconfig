@@ -1,0 +1,6 @@
+J2OBJC_HOME = /Users/dfg/Desktop/j2objc;
+
+HEADER_SEARCH_PATHS = "${J2OBJC_HOME}/include/";
+FRAMEWORK_SEARCH_PATHS = "${J2OBJC_HOME}/lib";
+LIBRARY_SEARCH_PATHS = "${J2OBJC_HOME}/lib";
+
