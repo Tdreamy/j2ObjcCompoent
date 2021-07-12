@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		BB126174269C25C500584185 /* J2OCCOmpoent.h in Headers */ = {isa = PBXBuildFile; fileRef = BB126172269C25C500584185 /* J2OCCOmpoent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB12617C269C25E100584185 /* Settings.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BB12617B269C25E100584185 /* Settings.xcconfig */; };
+		BB1261A9269C2B8C00584185 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = BB12619B269C2B8C00584185 /* LICENSE */; };
+		BB1261AA269C2B8C00584185 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BB12619C269C2B8C00584185 /* README.md */; };
+		BB1261AB269C2B8C00584185 /* CommandInterface.java in Sources */ = {isa = PBXBuildFile; fileRef = BB1261A0269C2B8C00584185 /* CommandInterface.java */; };
+		BB1261AC269C2B8C00584185 /* SuperEngine.java in Sources */ = {isa = PBXBuildFile; fileRef = BB1261A1269C2B8C00584185 /* SuperEngine.java */; };
+		BB1261AD269C2B8C00584185 /* README in Resources */ = {isa = PBXBuildFile; fileRef = BB1261A2269C2B8C00584185 /* README */; };
+		BB1261AE269C2B8C00584185 /* Position.java in Sources */ = {isa = PBXBuildFile; fileRef = BB1261A3269C2B8C00584185 /* Position.java */; };
+		BB1261AF269C2B8C00584185 /* Engine.java in Sources */ = {isa = PBXBuildFile; fileRef = BB1261A4269C2B8C00584185 /* Engine.java */; };
+		BB1261B0269C2B8C00584185 /* Game.java in Sources */ = {isa = PBXBuildFile; fileRef = BB1261A5269C2B8C00584185 /* Game.java */; };
+		BB1261B1269C2B8C00584185 /* Score.java in Sources */ = {isa = PBXBuildFile; fileRef = BB1261A6269C2B8C00584185 /* Score.java */; };
+		BB1261B2269C2B8C00584185 /* CommandInterfaceListener.java in Sources */ = {isa = PBXBuildFile; fileRef = BB1261A7269C2B8C00584185 /* CommandInterfaceListener.java */; };
+		BB1261B3269C2B8C00584185 /* Move.java in Sources */ = {isa = PBXBuildFile; fileRef = BB1261A8269C2B8C00584185 /* Move.java */; };
+		BB1261B8269C2BF900584185 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1261B7269C2BF900584185 /* libiconv.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -20,10 +32,10 @@
 			);
 			isEditable = 1;
 			outputFiles = (
-				"${PROJECT_DIR}/source/ocdist/${INPUT_FILE_BASE}.h",
-				"${PROJECT_DIR}/source/ocdist/${INPUT_FILE_BASE}.m",
+				"${PROJECT_DIR}/ocdist/${INPUT_FILE_BASE}.h",
+				"${PROJECT_DIR}/ocdist/${INPUT_FILE_BASE}.m",
 			);
-			script = "if [ ! -f \"${J2OBJC_HOME}/j2objc\" ]; then echo \"J2OBJC_HOME is not correctly defined, currently set to '${J2OBJC_HOME}'\"; exit 1; fi;\n\"${J2OBJC_HOME}/j2objc\" -d \"${PROJECT_DIR}/source/ocdist\" -sourcepath \"${PROJECT_DIR}/source/java/src\" --no-package-directories -use-arc --prefix Othello.Engine=JOE -g ${INPUT_FILE_PATH};\n";
+			script = "if [ ! -f \"${J2OBJC_HOME}/j2objc\" ]; then echo \"J2OBJC_HOME is not correctly defined, currently set to '${J2OBJC_HOME}'\"; exit 1; fi;\n\"${J2OBJC_HOME}/j2objc\" -d \"${PROJECT_DIR}/ocdist\" -sourcepath \"${PROJECT_DIR}/java/src\" --no-package-directories -use-arc --prefix Othello.Engine=JOE -g ${INPUT_FILE_PATH};\n";
 		};
 /* End PBXBuildRule section */
 
@@ -32,6 +44,18 @@
 		BB126172269C25C500584185 /* J2OCCOmpoent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = J2OCCOmpoent.h; sourceTree = "<group>"; };
 		BB126173269C25C500584185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB12617B269C25E100584185 /* Settings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Settings.xcconfig; sourceTree = "<group>"; };
+		BB12619B269C2B8C00584185 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		BB12619C269C2B8C00584185 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BB1261A0269C2B8C00584185 /* CommandInterface.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = CommandInterface.java; sourceTree = "<group>"; };
+		BB1261A1269C2B8C00584185 /* SuperEngine.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = SuperEngine.java; sourceTree = "<group>"; };
+		BB1261A2269C2B8C00584185 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		BB1261A3269C2B8C00584185 /* Position.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Position.java; sourceTree = "<group>"; };
+		BB1261A4269C2B8C00584185 /* Engine.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Engine.java; sourceTree = "<group>"; };
+		BB1261A5269C2B8C00584185 /* Game.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Game.java; sourceTree = "<group>"; };
+		BB1261A6269C2B8C00584185 /* Score.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Score.java; sourceTree = "<group>"; };
+		BB1261A7269C2B8C00584185 /* CommandInterfaceListener.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = CommandInterfaceListener.java; sourceTree = "<group>"; };
+		BB1261A8269C2B8C00584185 /* Move.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Move.java; sourceTree = "<group>"; };
+		BB1261B7269C2BF900584185 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/lib/libiconv.tbd; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB1261B8269C2BF900584185 /* libiconv.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,9 +73,11 @@
 		BB126165269C25C500584185 = {
 			isa = PBXGroup;
 			children = (
+				BB12619A269C2B8C00584185 /* java */,
 				BB12617B269C25E100584185 /* Settings.xcconfig */,
 				BB126171269C25C500584185 /* J2OCCOmpoent */,
 				BB126170269C25C500584185 /* Products */,
+				BB1261B6269C2BF900584185 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +96,56 @@
 				BB126173269C25C500584185 /* Info.plist */,
 			);
 			path = J2OCCOmpoent;
+			sourceTree = "<group>";
+		};
+		BB12619A269C2B8C00584185 /* java */ = {
+			isa = PBXGroup;
+			children = (
+				BB12619B269C2B8C00584185 /* LICENSE */,
+				BB12619C269C2B8C00584185 /* README.md */,
+				BB12619D269C2B8C00584185 /* src */,
+			);
+			path = java;
+			sourceTree = "<group>";
+		};
+		BB12619D269C2B8C00584185 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				BB12619E269C2B8C00584185 /* Othello */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		BB12619E269C2B8C00584185 /* Othello */ = {
+			isa = PBXGroup;
+			children = (
+				BB12619F269C2B8C00584185 /* Engine */,
+			);
+			path = Othello;
+			sourceTree = "<group>";
+		};
+		BB12619F269C2B8C00584185 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				BB1261A0269C2B8C00584185 /* CommandInterface.java */,
+				BB1261A1269C2B8C00584185 /* SuperEngine.java */,
+				BB1261A2269C2B8C00584185 /* README */,
+				BB1261A3269C2B8C00584185 /* Position.java */,
+				BB1261A4269C2B8C00584185 /* Engine.java */,
+				BB1261A5269C2B8C00584185 /* Game.java */,
+				BB1261A6269C2B8C00584185 /* Score.java */,
+				BB1261A7269C2B8C00584185 /* CommandInterfaceListener.java */,
+				BB1261A8269C2B8C00584185 /* Move.java */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		BB1261B6269C2BF900584185 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB1261B7269C2BF900584185 /* libiconv.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +217,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB1261AD269C2B8C00584185 /* README in Resources */,
+				BB1261AA269C2B8C00584185 /* README.md in Resources */,
+				BB1261A9269C2B8C00584185 /* LICENSE in Resources */,
 				BB12617C269C25E100584185 /* Settings.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +231,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB1261B3269C2B8C00584185 /* Move.java in Sources */,
+				BB1261AE269C2B8C00584185 /* Position.java in Sources */,
+				BB1261AF269C2B8C00584185 /* Engine.java in Sources */,
+				BB1261B1269C2B8C00584185 /* Score.java in Sources */,
+				BB1261AB269C2B8C00584185 /* CommandInterface.java in Sources */,
+				BB1261B2269C2B8C00584185 /* CommandInterfaceListener.java in Sources */,
+				BB1261B0269C2B8C00584185 /* Game.java in Sources */,
+				BB1261AC269C2B8C00584185 /* SuperEngine.java in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +381,8 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-ljre_emul";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zty.J2OCCOmpoent;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -316,6 +406,8 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-ljre_emul";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zty.J2OCCOmpoent;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
